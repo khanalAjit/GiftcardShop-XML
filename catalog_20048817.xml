@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="catalog_20048817.css" type="text/css"?>
+
+<!--
+    Author : Ajit Khanal
+    Date : 03/31/2022
+-->
+<!-- connecting to the schema-->
+<ajstore xsi:noNamespaceSchemaLocation="catalog_20048817.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <heading>
+        <logo of="store"/>  <!--Using attribute for recognition and CSS-->
+        <middlef>
+            <store_name>AJStore</store_name>
+            <contact_info>
+                <website> www.AJStores.com</website>
+                <address> Address : Kageshwori Manohara-7 </address>
+                <mobile_phone>9818943327</mobile_phone>
+                <telephone>01555555</telephone>
+            </contact_info>
+        </middlef>
+        <rightf>
+            <social_medias>
+                Find Us At:
+                <facebook>AJStore
+                    <flogo></flogo>
+                </facebook>
+                <instagram>it's_AJStore
+                    <ilogo></ilogo>
+                </instagram>
+                <twitter>AJStore
+                    <tlogo></tlogo>
+                </twitter>
+     
+            </social_medias>
+        </rightf> 
+    </heading>
+   
+    <!-- welcoming the visitor to the store-->
+    <welcome>
+        Welcome to the AJStore.
+    </welcome>
+
+    <!-- listing the available giftcards-->
+    <giftcards>
+        <card CID="C1" type="digital">
+            <design>    <!-- design,fleft(flex left), and fright(flex right) are for css use-->
+                <fleft>
+                    <image name="amazon"> </image>
+                    <name> Amazon Gift Card</name>
+                </fleft>
+                <fright>
+            <!-- code number is optional-->
+                    <type> Digital Giftcard </type>
+                    <country>Country = United Kingdom</country>
+                    <code_number>Code Number = 01NP6C5</code_number>
+                    <cost currency="dollar">Price = $50</cost>
+                    <availability>In Stock</availability>
+                    <validity> Valid Until = Always Valid</validity>
+            <!-- discount is optional-->
+                    <discount specialEvent="Festivals"> 15% off in any purchase on amazon during festivals.</discount>
+                    <quantity>No. Of Cards Available = 25</quantity>
+                    <!-- details of the card is written in description-->
+                    <description>
+                        <![CDATA[ This Amazon gift card is a card pre-loaded with $50 and will be 
+                        sent out via email, post, or another method to the buyer. The buyer can redeem 
+                        their gift card on Amazon for anything on Amazon. They can purchase gift cards up to $10,000 
+                        in a single day]]>
+                    </description>
+                </fright>
+            </design>
+            <reviews>
+                Here's what people think about this card.
+                <recommendations> Recommended by 1K+ people </recommendations>
+                <rating> Rating: 4.5</rating>
+            </reviews>
+        </card>
+
+
+        <card CID="C2" type="physical">
+            <design>
+                <fleft>
+                    <image name="kalyan"> </image>
+                    <name> Kalyan Gold Jewellery Gift Card</name>
+                </fleft>
+                <fright>
+                    <type> Physical Giftcard</type>
+                    <country>Country = India</country>
+                    <cost currency="USD">Price = $5</cost>
+                    <availability> In Stock</availability>
+                    <discount> 5% discount on HSBC Cashback Card Transactions. </discount>
+                    <quantity>No. Of Cards Available = 30</quantity>
+                    <description>
+                        <![CDATA[ This Kalyan gift card is a physical gift card worth $5 and can be used
+                        to buy any products in Kalyan Jewellaries. There is a 5% discount on HSBC 
+                        Cash back Card Transactions. ]]>
+                    </description>
+                </fright>
+            </design>
+            <!-- product details is optional-->
+            <product_details>
+                Physical Structures of the Card
+                <card_size cardType="Plastic">
+                    <dimention> Dimention = 15.01 x 11 x 0.05 cm </dimention>
+                    <weight> Weight = 50 Grams </weight>
+                </card_size>
+                <manufacturer> Manufactured By = Kalyan </manufacturer>
+                <selling_rank> #324 in top selling giftcards.</selling_rank>
+            </product_details>
+        </card>
+
+        <card CID="C3" type="physical">
+            <design>
+                <fleft>
+                    <image name="lifestyle"> </image>
+                    <name> Lifestyle Gift Card</name>
+                </fleft>
+                <fright>
+                    <type>Physical Giftcard</type>
+                    <country>Country = India</country>
+                    <cost currency="USD">Price = $20</cost>
+                    <availability>In Stock</availability>
+                    <discount> 5% discount on HSBC Cashback Card Transactions. </discount>
+                    <quantity>No. Of Cards Available = 30</quantity>
+                    <shipping_charge facility="special">Shipping Charge = $5</shipping_charge>
+                    <description>
+                        <![CDATA[This Lifestyle gift card is a physical gift card worth $20 and can be used
+                        to buy any products sold by Lifestyle enterprises. There is a 5% discount on HSBC 
+                        Cash back Card Transactions. There is also a special shipping facility which delivers
+                        this card to the doorstep of the buyer. ]]>
+                    </description>
+                </fright>
+            </design>
+                    <!-- optional-->
+            <product_details>
+                Physical Structures of this card
+                <card_size cardType="paper">
+                    <dimention> Dimention = 25.2 x 12 x 0.6 cm </dimention>
+                    <weight> Weight = 50 Grams </weight>
+                </card_size>
+                <manufacturer>Manufactured By = Lifestyle </manufacturer>
+                <selling_rank> #320 in top selling giftcards.</selling_rank>
+            </product_details>
+        </card>
+
+        <card CID="C4" type="digital">
+            <design>
+                <fleft>
+                    <image name="iTunes"> </image>
+                    <name> iTunes Gift Card</name>
+                </fleft>
+                <fright>
+                    <type>Digital Giftcard</type>
+                    <country> Country = USA</country>
+                    <!-- code number is optional-->
+                    <code_number>Secret Code = 524896E</code_number>
+                    <cost currency="USD">Price = $50</cost>
+                    <availability>In Stock</availability>
+                    <validity>Valid Until = 30/12/2025 </validity>
+                    <!-- discount is optional-->
+                    <quantity>No. Of Card Available = 15</quantity>
+                    <description>
+                        <![CDATA[ An iTunes gift card (usually labeled as an App Store & iTunes card) is 
+                        pre-purchased credit for Apple's various digital services. This includes the 
+                        iTunes Store—Apple's media and software marketplace where you can buy music, 
+                        movies, apps, and more. The available giftcard is a digital card worth $50]]>
+                    </description>
+                </fright>
+            </design>
+            <!-- review is also optional-->
+            <reviews>
+                Comments
+                <comments cmntBy="uid100">Rakh: Awsome Product! </comments>
+                <comments cmntBy="uid103">Rakesh: I Love the Store. </comments>
+            </reviews>
+        </card>
+
+    </giftcards>
+
+    <!-- ending is used for css-->
+    <!-- giftcard providers and their company logo are displayed at the end-->
+    <ending>
+        Our Giftcard Partners
+        <amazon>
+            <logo of="amazon"></logo>
+            Amazon
+        </amazon>
+        <kalyan>
+            <logo of="kalyan"></logo>
+            Kalyan Jwellers
+        </kalyan>
+        <lifestyle>
+            <logo of="lifestyle"></logo>
+            Lifestyle
+        </lifestyle>
+        <itunes>
+            <logo of="iTunes"></logo>
+            iTunes
+        </itunes>
+    </ending>
+
+
+</ajstore>

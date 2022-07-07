@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- using vanetican blind style for the css-->
+
+
+<xs:complexType name="logoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="of" type="xs:string"  use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="contact_infoType">
+    <xs:sequence>
+      <xs:element name="website" type="xs:anyURI"/>
+      <xs:element name="address" type="xs:string"/>
+      <xs:element name="mobile_phone" type="xs:positiveInteger" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="telephone" type="xs:positiveInteger" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+<xs:complexType name="middlefType">
+    <xs:sequence>
+      <xs:element name="store_name" type="xs:string" />
+      <xs:element name="contact_info" type="contact_infoType" />
+    </xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="facebookType" mixed="true">
+    <xs:sequence>
+      <xs:element name="flogo"  minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="instagramType" mixed="true">
+    <xs:sequence>
+      <xs:element name="ilogo"  minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="twitterType" mixed="true">
+    <xs:sequence>
+      <xs:element name="tlogo" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+<xs:complexType name="social_mediasType" mixed="true">
+    <xs:sequence>
+        <xs:element name="facebook" type="facebookType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="instagram" type="instagramType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="twitter" type="twitterType" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+</xs:complexType>
+
+
+
+<xs:complexType name="rightfType">
+    <xs:sequence>
+      <xs:element name="social_medias" type="social_mediasType" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="headingType">
+    <xs:sequence>
+      <xs:element name="logo" type="logoType" />
+      <xs:element name="middlef" type="middlefType" />
+      <xs:element name="rightf" type="rightfType" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="imageType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="name" type="xs:string"  use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+<xs:complexType name="fleftType">
+    <xs:sequence>
+      <xs:element name="image" type="imageType" />
+      <xs:element name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="costType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="currency" type="xs:string"  use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- this schema defines that the element named discount should have a string data 
+    with an attribute which also uses string data and is optional.-->
+  <xs:complexType name="discountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="specialEvent" type="xs:string"  use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+
+  <xs:complexType name="shipping_chargeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="facility" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+
+<xs:complexType name="frightType">
+    <xs:sequence>
+      <xs:element name="type" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="country" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="code_number" type="xs:string"  minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="cost" type="costType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="availability" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="validity" type="xs:string"  minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="discount" type="discountType"  minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="quantity" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="shipping_charge" type="shipping_chargeType"  minOccurs="0" maxOccurs="1"/>
+      <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="designType">
+    <xs:sequence>
+      <xs:element name="fleft" type="fleftType" />
+      <xs:element name="fright" type="frightType" />
+    </xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="commentsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="cmntBy" type="xs:ID"  use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="reviewsType" mixed="true">
+    <xs:sequence>
+      <xs:element name="recommendations" type="xs:string"  minOccurs="0"/>
+      <xs:element name="rating" type="xs:string"  minOccurs="0"/>
+      <xs:element name="comments" type="commentsType"  maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+</xs:complexType>
+
+
+
+<xs:complexType name="card_sizeType">
+    <xs:sequence>
+      <xs:element name="dimention" type="xs:string" />
+      <xs:element name="weight" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="cardType" type="xs:string"  use="required"/>
+</xs:complexType>
+
+
+<!-- mixed = 'true' defines that the element contains both PCData and element.-->
+
+<xs:complexType name="product_detailsType" mixed="true">
+    <xs:all>
+      <xs:element name="card_size" type="card_sizeType" />
+      <xs:element name="manufacturer" type="xs:string" />
+      <xs:element name="selling_rank" type="xs:string" />
+    </xs:all>
+</xs:complexType>
+
+<!-- type attribute should only have two values i.e., physical and digital.-->
+<xs:simpleType name="typeType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="physical"/>
+    <xs:enumeration value="digital"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="cardType">
+    <xs:sequence>
+      <xs:element name="design" type="designType" />
+      <xs:element name="reviews" type="reviewsType"  minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="product_details" type="product_detailsType"  minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <!-- use defines the requirement of the attribute.
+    tje type attribute has restriction so the data type is not given in this statement.-->
+    <xs:attribute name="CID" type="xs:ID"  use="required"/>
+    <xs:attribute name="type" type="typeType"  use="required"/>
+  </xs:complexType>
+
+
+<!-- the element 'card' can exist zero or more times.-->
+  
+<xs:complexType name="giftcardsType">
+        <xs:sequence>
+          <xs:element name="card" type="cardType"  maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+</xs:complexType>
+
+
+
+
+<!-- logoType is already defined above -->
+<xs:complexType name="amazonType" mixed="true">
+    <xs:sequence>
+      <xs:element name="logo" type="logoType" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="kalyanType" mixed="true">
+    <xs:sequence>
+      <xs:element name="logo" type="logoType" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="lifestyleType" mixed="true">
+    <xs:sequence>
+      <xs:element name="logo" type="logoType" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="itunesType" mixed="true">
+    <xs:sequence>
+      <xs:element name="logo" type="logoType" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <!-- min ouccurs and max occurs defines the apperance of the element in XML document
+  here, these elements should not exist more than once in the XML document.-->
+<xs:complexType name="endingType" mixed="true">
+    <xs:sequence>
+      <xs:element name="amazon" type="amazonType" maxOccurs="1" minOccurs="0"/>
+      <xs:element name="kalyan" type="kalyanType" maxOccurs="1" minOccurs="0"/>
+      <xs:element name="lifestyle" type="lifestyleType" maxOccurs="1" minOccurs="0"/>
+      <xs:element name="itunes" type="itunesType" maxOccurs="1" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+<xs:complexType name="ajstoreType">
+    <xs:sequence>
+        <xs:element name="heading"  type="headingType"/>
+        <xs:element name="welcome"  type="xs:string"/>
+        <xs:element name="giftcards"   type="giftcardsType"/>
+        <xs:element name="ending"   type="endingType"/>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- every complex type element is given a different 
+  eg 'ajstoreType is given to ajstore element as it is a complex element'
+Those element should be defined so, they are generally defined above the element declaration.-->
+<xs:element name="ajstore"  type="ajstoreType"/>
+</xs:schema>

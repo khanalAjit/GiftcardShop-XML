@@ -1,0 +1,444 @@
+ajstore{
+    background-color: black;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+welcome{
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    color: rgb(175, 175, 175);
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 60%;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    animation: 
+      typing 5s forwards alternate;
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 25%;}
+  }
+
+store_name{
+    color: rgb(33, 30, 230);
+    display: block;
+    width: auto;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+heading{
+    display:flex;
+    border-bottom: solid;
+    border-radius: 5px;
+    border-color: rgb(32, 229, 229);
+    box-shadow:  0 4px 8px 0 rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+logo[of="store"] {
+    flex: 30%;
+    float: left;
+    width: 200px;
+    height: 260px;
+    background-image: url("images/AJStore-logos_white.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+middlef{
+    flex: 40%;
+}
+rightf{
+    flex: 30%;
+}
+website{
+    color: gray;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+address{
+    margin-top: 15px;
+    color: gray;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+mobile_phone{
+    color: gray;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+telephone{
+    margin-top: 15px;
+    color: gray;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+social_medias{
+    color: rgb(88, 93, 0);
+    display: block;
+    text-align: center;
+    margin-right: 100px;
+}
+facebook{
+    color: rgb(56, 146, 224);
+    text-align: right;
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+}
+flogo{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/facebook.png");
+    background-position: center;
+    background-size: cover;
+}
+instagram{
+    color: rgb(239, 67, 67);
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+ilogo{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/Instagram.png");
+    background-position: center;
+    background-size: cover;
+}
+
+twitter{
+    color: rgb(56, 146, 224);
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+tlogo{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/twitter.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+design{
+    display: flex;
+}
+lflex{
+    flex: 40%;
+}
+fright{
+    margin-right: 35px;
+    margin-left: 35px;
+    flex: 60%;
+    border: solid;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgb(40, 198, 238);
+}
+image[name="amazon"]{
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 460px;
+    background-image: url("images/amazon_card.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow:  0 4px 8px 0 rgb(40, 198, 238);
+
+}
+name{
+    color: rgb(60, 220, 237);
+    display: block;
+    text-align: center;
+    font-style: oblique;
+}
+fright{
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #fefefebd;
+    text-align: center;
+}
+
+type{
+    font-size: 40px;
+    color: cornflowerblue;
+}
+country{
+    display: block;
+    margin-top: 70px;
+    
+}
+code_number{
+    margin-top: 15px;
+    display: block;
+    
+}
+cost{
+    margin-top: 15px;
+    display: block;
+    
+
+}
+
+availability{
+    display: block;
+    margin-top: 15px;
+    
+
+}
+
+validity{
+    display: block;
+    margin-top: 15px;
+    
+
+}
+
+discount{
+    display: block;
+    margin-top: 15px;
+    
+
+}
+
+quantity{
+    display: block;
+    margin-top: 15px;
+    
+
+}
+
+description{
+    font-size: 25px;
+    font-style: italic;
+    display: block;
+    margin-top: 40px;
+}
+reviews{
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 330px;
+    display: block;
+    text-align: left;
+    color: rgb(75, 75, 237);
+    border-left: solid;
+    border-radius: 5px;
+    box-shadow:  0 4px 8px 0 rgb(40, 198, 238);
+}
+recommendations{
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+    color: #FFFFFF;
+}
+rating{
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+product_details{
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 330px;
+    display: block;
+    text-align: left;
+    color: rgb(237, 213, 75);
+    border-left: solid;
+    border-radius: 5px;
+    box-shadow:  0 4px 8px 0 rgb(224, 240, 51);
+}
+dimention{
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+}
+weight{
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+}
+manufacturer{
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+}
+selling_rank{
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+}
+comments{
+    margin-top: 25px;
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+    color: #FFFFFF;
+}
+shipping_charge{
+    display: block;
+    margin-top: 15px;
+    
+}
+
+image[name="kalyan"]{
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 460px;
+    background-image: url("images/kalyan.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow:  0 4px 8px 0 rgb(40, 198, 238);
+
+}
+image[name="lifestyle"]{
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 460px;
+    background-image: url("images/lifestyle-gift-card.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow:  0 4px 8px 0 rgb(40, 198, 238);
+
+}
+image[name="iTunes"]{
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 460px;
+    background-image: url("images/iTunes.png");
+    background-position: center;
+    background-size: 190%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow:  0 4px 8px 0 rgb(40, 198, 238);
+
+}
+
+ending{
+    margin-top: 25px;
+    display: flex;
+    display:block;
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow:  2px 4px 8px 2px rgb(40, 198, 238);
+}
+amazon{
+    flex: 25%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px; 
+    border: 5px;
+    box-shadow:  2px 4px 8px 2px rgb(40, 198, 238);
+   
+}
+logo[of="amazon"]{
+    display: inline-flex;
+    width: 90px;
+    height: 90px;
+    background-image: url("images/amazon.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+kalyan{
+    flex: 25%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    border: 5px;
+    box-shadow:  2px 4px 8px 2px rgb(40, 198, 238);
+}
+logo[of="kalyan"]{
+    display: inline-flex;
+    width: 90px;
+    height: 90px;
+    background-image: url("images/kalyan.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+lifestyle{
+    display: inline-block;
+    flex: 25%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    border: 5px;
+    box-shadow:  2px 4px 8px 2px rgb(40, 198, 238);
+}
+logo[of="lifestyle"]{
+    display: inline-flex;
+    width: 90px;
+    height: 90px;
+    background-image: url("images/lifestyle.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+itunes{
+    display: inline-block;
+    flex: 25%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    border: 5px;
+    box-shadow:  2px 4px 8px 2px rgb(40, 198, 238);
+}
+logo[of="iTunes"]{
+    display: inline-flex;
+    width: 90px;
+    height: 90px;
+    background-image: url("images/itunes_logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
